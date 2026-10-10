@@ -85,7 +85,11 @@ It is built with and distributes:
   (GPL-3.0), by way of WatchBox for Android.
 - **[egui/eframe](https://github.com/emilk/egui)**, **[wry/tao](https://github.com/tauri-apps/wry)**
   and the other Rust crates it uses, under MIT, Apache-2.0 or BSD-style licences.
-- **JetBrains Sans** (Apache-2.0) and **[Phosphor Icons](https://phosphoricons.com)** (MIT).
+- The **[Geologica](https://fonts.google.com/specimen/Geologica)** and **[Bungee](https://fonts.google.com/specimen/Bungee)** typefaces (SIL Open Font Licence 1.1),
+  and **[Phosphor Icons](https://phosphoricons.com)** (MIT).
 
 Metadata and images come from [TMDB](https://www.themoviedb.org). This product uses the TMDB API
 but is not endorsed or certified by TMDB.
+
+Streaming service and TV network names and logos are trademarks of their owners. WatchBox
+shows them, as TMDB lists them, only to say where a title streams or airs.
