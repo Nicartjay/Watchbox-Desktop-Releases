@@ -34,7 +34,18 @@ first launch is blocked:
   `xattr -dr com.apple.quarantine /Applications/WatchBox.app` in Terminal.
 
 **Linux.** AppImage: `chmod +x watchbox-*.AppImage`, then run it. Debian/Ubuntu:
-`sudo apt install ./watchbox-*.deb`, which also installs `libmpv2`.
+`sudo apt install ./watchbox-*.deb`, which also installs `libmpv2` and WebKitGTK.
+
+### Cloudflare checks
+
+Some sources' sites sometimes ask "verify you're human". WatchBox then opens the site in a small
+browser window. Pass the check once and WatchBox continues by itself; it remembers the site, so
+next time the check usually passes unseen. The window needs the system's web engine:
+- **Windows:** Microsoft Edge WebView2, built into Windows 11. On Windows 10, install the
+  [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) if the window
+  doesn't open.
+- **Linux AppImage:** WebKitGTK, from your distribution: `libwebkit2gtk-4.1-0` on
+  Debian/Ubuntu, `webkit2gtk4.1` on Fedora. The `.deb` brings it along.
 
 ## Updates
 
@@ -72,8 +83,8 @@ It is built with and distributes:
   Rust.
 - The design system of **[NuvioMobile](https://github.com/NuvioMedia/NuvioMobile)**
   (GPL-3.0), by way of WatchBox for Android.
-- **[egui/eframe](https://github.com/emilk/egui)** and the other Rust crates it uses, under
-  MIT, Apache-2.0 or BSD-style licences.
+- **[egui/eframe](https://github.com/emilk/egui)**, **[wry/tao](https://github.com/tauri-apps/wry)**
+  and the other Rust crates it uses, under MIT, Apache-2.0 or BSD-style licences.
 - **JetBrains Sans** (Apache-2.0) and **[Phosphor Icons](https://phosphoricons.com)** (MIT).
 
 Metadata and images come from [TMDB](https://www.themoviedb.org). This product uses the TMDB API
